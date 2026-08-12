@@ -86,7 +86,7 @@ function Ornament() {
 
 function Index() {
   return (
-    <main className="bg-background text-foreground">
+    <main className="text-foreground">
       {/* HERO */}
       <section className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6">
         <img
@@ -195,7 +195,7 @@ function Index() {
       </section>
 
       {/* SERVIÇOS */}
-      <section className="bg-secondary/60 px-6 py-24 sm:py-36">
+      <section className="bg-secondary/70 backdrop-blur-[2px] px-6 py-24 sm:py-36">
         <div className="mx-auto max-w-4xl">
           <Reveal className="text-center">
             <p className="eyebrow">O que registramos</p>
@@ -267,7 +267,7 @@ function Index() {
       </section>
 
       {/* DEPOIMENTOS */}
-      <section className="bg-secondary/60 px-6 py-24 sm:py-32">
+      <section className="bg-secondary/70 backdrop-blur-[2px] px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
           <Reveal className="text-center">
             <Ornament />
