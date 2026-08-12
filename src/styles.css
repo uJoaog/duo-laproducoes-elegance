@@ -54,30 +54,30 @@
 :root {
   --radius: 0.125rem;
   /* warm neutral palette */
-  --ivory: oklch(0.975 0.012 78);
-  --olive: oklch(0.42 0.045 55);
-  --gold: oklch(0.68 0.068 62);
-  --ink: oklch(0.30 0.028 55);
+  --ivory: oklch(0.972 0.012 110);
+  --olive: oklch(0.50 0.038 150);
+  --gold: oklch(0.66 0.045 145);
+  --ink: oklch(0.36 0.028 150);
 
-  --background: oklch(0.975 0.012 78);
-  --foreground: oklch(0.30 0.028 55);
-  --card: oklch(0.988 0.009 78);
+  --background: oklch(0.972 0.012 110);
+  --foreground: oklch(0.36 0.028 150);
+  --card: oklch(0.988 0.008 110);
   --card-foreground: var(--ink);
-  --popover: oklch(0.988 0.009 78);
+  --popover: oklch(0.988 0.008 110);
   --popover-foreground: var(--ink);
-  --primary: oklch(0.42 0.045 55);
-  --primary-foreground: oklch(0.975 0.012 78);
-  --secondary: oklch(0.945 0.016 76);
+  --primary: oklch(0.46 0.040 150);
+  --primary-foreground: oklch(0.975 0.010 110);
+  --secondary: oklch(0.950 0.014 125);
   --secondary-foreground: var(--ink);
-  --muted: oklch(0.945 0.016 76);
-  --muted-foreground: oklch(0.545 0.024 60);
-  --accent: oklch(0.68 0.068 62);
-  --accent-foreground: oklch(0.24 0.020 55);
+  --muted: oklch(0.950 0.014 125);
+  --muted-foreground: oklch(0.575 0.022 150);
+  --accent: oklch(0.64 0.048 148);
+  --accent-foreground: oklch(0.28 0.020 150);
   --destructive: oklch(0.55 0.15 27);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.885 0.016 76);
-  --input: oklch(0.885 0.016 76);
-  --ring: oklch(0.68 0.068 62);
+  --border: oklch(0.895 0.014 125);
+  --input: oklch(0.895 0.014 125);
+  --ring: oklch(0.64 0.048 148);
 }
 
 
@@ -88,9 +88,9 @@
 
   body {
     background-color: var(--color-background);
-    background-image: url("./assets/floral-pattern.png");
+    background-image: url("/__l5e/assets-v1/ed81a5ae-5d71-41b3-8921-8abe8341d202/floral-sage.png");
     background-repeat: repeat;
-    background-size: 620px auto;
+    background-size: 520px auto;
     background-attachment: fixed;
     opacity: 1;
     color: var(--color-foreground);
@@ -151,7 +151,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-color: color-mix(in oklab, var(--background) 88%, transparent);
+  background-color: color-mix(in oklab, var(--background) 84%, transparent);
   pointer-events: none;
   z-index: 0;
 }
