@@ -1,24 +1,351 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Reveal } from "@/components/Reveal";
+import hero from "@/assets/hero.jpg";
+import about from "@/assets/about.jpg";
+import g1 from "@/assets/g1.jpg";
+import g2 from "@/assets/g2.jpg";
+import g3 from "@/assets/g3.jpg";
+import g4 from "@/assets/g4.jpg";
+import g5 from "@/assets/g5.jpg";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const WHATSAPP = "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento";
+const INSTAGRAM = "https://instagram.com/duo.laproducoes";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "duo.laproducoes — Fotografia e Filmagem de Eventos" },
+      {
+        name: "description",
+        content:
+          "Fotografia e filmagem de casamentos, aniversários e eventos corporativos. Um olhar delicado para eternizar os momentos que importam.",
+      },
+      { property: "og:title", content: "duo.laproducoes — Fotografia e Filmagem de Eventos" },
+      {
+        property: "og:description",
+        content:
+          "Dupla criativa de fotografia e vídeo para casamentos, aniversários e eventos corporativos.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
+const servicos = [
+  {
+    n: "01",
+    t: "Casamentos",
+    d: "Do making of à última música. Cobertura completa em foto e vídeo, com discrição e um olhar atento aos detalhes que ninguém vê.",
+  },
+  {
+    n: "02",
+    t: "Aniversários",
+    d: "Celebrações íntimas ou grandes festas. Registros espontâneos que guardam o clima da noite, não apenas as poses.",
+  },
+  {
+    n: "03",
+    t: "Corporativo",
+    d: "Congressos, lançamentos e confraternizações. Imagens elegantes e prontas para comunicação da sua marca.",
+  },
+  {
+    n: "04",
+    t: "Ensaios & Pré-Wedding",
+    d: "Sessões conduzidas com calma, em locação escolhida a dois, para criar intimidade antes do grande dia.",
+  },
+];
+
+const depoimentos = [
+  {
+    q: "Eles estavam em todos os lugares e, ao mesmo tempo, em lugar nenhum. Só percebemos o cuidado quando vimos as fotos.",
+    a: "Marina & Rafael",
+    e: "Casamento — Serra da Cantareira",
+  },
+  {
+    q: "O filme do nosso casamento é a coisa mais bonita que temos. Assistimos junto com a família todo ano.",
+    a: "Juliana & Pedro",
+    e: "Casamento — Campos do Jordão",
+  },
+  {
+    q: "Profissionalismo absoluto no nosso evento corporativo. Material entregue no prazo e acima da expectativa.",
+    a: "Camila Duarte",
+    e: "Diretora de Marketing",
+  },
+];
+
+function Ornament() {
+  return (
+    <div className="flex items-center justify-center gap-3" aria-hidden>
+      <span className="rule-thin w-16 sm:w-24" />
+      <span className="size-1 rotate-45 bg-accent" />
+      <span className="rule-thin w-16 sm:w-24" />
+    </div>
+  );
+}
+
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="bg-background text-foreground">
+      {/* HERO */}
+      <section className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6">
+        <img
+          src={hero}
+          alt="Casal de noivos ao pôr do sol sob arcos de pedra"
+          width={1920}
+          height={1280}
+          className="absolute inset-0 size-full object-cover"
+        />
+        <div className="absolute inset-0 bg-ink/45" />
+        <div className="absolute inset-4 border border-ivory/25 sm:inset-8" aria-hidden />
+
+        <div className="relative z-10 flex flex-col items-center text-center">
+          <Reveal>
+            <p className="eyebrow text-ivory/70">Fotografia &amp; Filmagem de Eventos</p>
+          </Reveal>
+          <Reveal delay={150}>
+            <h1 className="mt-7 font-display text-[2.6rem] leading-[1.05] text-ivory sm:text-6xl lg:text-7xl">
+              duo<span className="text-accent">.</span>laproducoes
+            </h1>
+          </Reveal>
+          <Reveal delay={300} className="mt-8">
+            <Ornament />
+          </Reveal>
+          <Reveal delay={420}>
+            <p className="mt-8 max-w-md font-serif text-xl italic leading-relaxed text-ivory/85 sm:max-w-lg sm:text-2xl">
+              Eternizando os momentos que importam
+            </p>
+          </Reveal>
+          <Reveal delay={560}>
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-12 inline-block border border-ivory/45 px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ivory uppercase transition-colors duration-500 hover:border-accent hover:bg-accent/90 hover:text-ink"
+            >
+              Consultar data
+            </a>
+          </Reveal>
+        </div>
+
+        <div className="absolute bottom-10 z-10 flex flex-col items-center gap-3" aria-hidden>
+          <span className="text-[0.6rem] tracking-[0.3em] text-ivory/50 uppercase">Role</span>
+          <span className="h-12 w-px bg-ivory/30" />
+        </div>
+      </section>
+
+      {/* SOBRE */}
+      <section className="px-6 py-24 sm:py-36">
+        <div className="mx-auto grid max-w-5xl items-center gap-14 md:grid-cols-[1fr_1.1fr] md:gap-20">
+          <Reveal>
+            <div className="relative">
+              <div className="absolute -inset-3 border border-accent/35" aria-hidden />
+              <img
+                src={about}
+                alt="Dupla de profissionais fotografando e filmando um evento"
+                width={1000}
+                height={1250}
+                loading="lazy"
+                className="relative w-full object-cover"
+              />
+            </div>
+          </Reveal>
+          <div>
+            <Reveal>
+              <p className="eyebrow">Sobre nós</p>
+              <h2 className="mt-6 font-display text-3xl leading-tight sm:text-[2.6rem]">
+                Duas visões,
+                <br />
+                uma mesma história
+              </h2>
+            </Reveal>
+            <Reveal delay={140}>
+              <p className="mt-8 max-w-prose text-[0.98rem] leading-[1.9] text-muted-foreground">
+                A duo.laproducoes nasceu do encontro de uma fotógrafa e um cinegrafista que
+                acreditam na mesma coisa: os melhores registros acontecem quando ninguém percebe a
+                câmera. Trabalhamos sempre em dupla — enquanto um observa o gesto, o outro guarda o
+                movimento.
+              </p>
+            </Reveal>
+            <Reveal delay={240}>
+              <p className="mt-6 max-w-prose text-[0.98rem] leading-[1.9] text-muted-foreground">
+                Cobertura completa de foto e vídeo, do planejamento à entrega, com tratamento
+                autoral, luz natural sempre que possível e nenhuma pressa. O resultado é um acervo
+                que envelhece bem — para ser revisto daqui a vinte anos.
+              </p>
+            </Reveal>
+            <Reveal delay={320}>
+              <div className="mt-12 flex flex-wrap gap-x-14 gap-y-8">
+                {[
+                  ["+180", "eventos registrados"],
+                  ["2", "profissionais em cada evento"],
+                  ["8 anos", "de estrada juntos"],
+                ].map(([k, v]) => (
+                  <div key={v}>
+                    <p className="font-display text-2xl text-primary">{k}</p>
+                    <p className="mt-1 text-[0.7rem] tracking-[0.16em] text-muted-foreground uppercase">
+                      {v}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVIÇOS */}
+      <section className="bg-secondary/60 px-6 py-24 sm:py-36">
+        <div className="mx-auto max-w-4xl">
+          <Reveal className="text-center">
+            <p className="eyebrow">O que registramos</p>
+            <h2 className="mt-6 font-display text-3xl sm:text-[2.6rem]">Serviços</h2>
+            <div className="mt-8">
+              <Ornament />
+            </div>
+          </Reveal>
+
+          <div className="mt-16 border-t border-border">
+            {servicos.map((s, i) => (
+              <Reveal key={s.t} delay={i * 90}>
+                <article className="group grid grid-cols-[auto_1fr] gap-x-6 gap-y-3 border-b border-border py-10 transition-colors duration-500 hover:bg-background/60 sm:grid-cols-[5rem_1fr_1.4fr] sm:gap-x-10">
+                  <span className="font-serif text-sm text-accent">{s.n}</span>
+                  <h3 className="font-display text-2xl leading-tight sm:text-[1.7rem]">{s.t}</h3>
+                  <p className="col-span-2 max-w-prose text-[0.95rem] leading-[1.85] text-muted-foreground sm:col-span-1">
+                    {s.d}
+                  </p>
+                </article>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PORTFÓLIO */}
+      <section className="px-6 py-24 sm:py-36">
+        <Reveal className="mx-auto max-w-4xl text-center">
+          <p className="eyebrow">Seleção</p>
+          <h2 className="mt-6 font-display text-3xl sm:text-[2.6rem]">Portfólio</h2>
+          <p className="mx-auto mt-6 max-w-md font-serif text-lg italic text-muted-foreground">
+            Um recorte de noites, gestos e detalhes que ficaram.
+          </p>
+        </Reveal>
+
+        <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-10 lg:gap-14">
+          {[
+            { src: g1, alt: "Mesa posta com velas e flores secas", w: 900, h: 1200, tall: true },
+            { src: g2, alt: "Convidados celebrando em festa elegante", w: 1200, h: 900 },
+            { src: g3, alt: "Mãos da noiva segurando buquê delicado", w: 900, h: 1200, tall: true },
+            { src: g4, alt: "Evento corporativo noturno em salão iluminado", w: 1200, h: 900 },
+            { src: g5, alt: "Bolo de aniversário com velas acesas", w: 900, h: 1200, tall: true },
+          ].map((img, i) => (
+            <Reveal
+              key={img.alt}
+              delay={(i % 2) * 120}
+              className={i === 4 ? "sm:col-span-2 sm:mx-auto sm:w-2/3" : ""}
+            >
+              <figure className="group overflow-hidden">
+                <div className="overflow-hidden">
+                  <img
+                    src={img.src}
+                    alt={img.alt}
+                    width={img.w}
+                    height={img.h}
+                    loading="lazy"
+                    className={`w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04] ${
+                      img.tall ? "aspect-[3/4]" : "aspect-[4/3]"
+                    }`}
+                  />
+                </div>
+                <figcaption className="mt-4 text-[0.68rem] tracking-[0.24em] text-muted-foreground uppercase opacity-0 transition-opacity duration-700 group-hover:opacity-100">
+                  {img.alt}
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* DEPOIMENTOS */}
+      <section className="bg-secondary/60 px-6 py-24 sm:py-32">
+        <div className="mx-auto max-w-5xl">
+          <Reveal className="text-center">
+            <Ornament />
+          </Reveal>
+          <div className="mt-16 grid gap-14 md:grid-cols-3 md:gap-10">
+            {depoimentos.map((d, i) => (
+              <Reveal key={d.a} delay={i * 120}>
+                <blockquote className="text-center md:text-left">
+                  <p className="font-serif text-xl leading-relaxed italic text-foreground/85">
+                    “{d.q}”
+                  </p>
+                  <footer className="mt-6">
+                    <p className="text-[0.72rem] tracking-[0.22em] uppercase">{d.a}</p>
+                    <p className="mt-2 text-[0.8rem] text-muted-foreground">{d.e}</p>
+                  </footer>
+                </blockquote>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTATO */}
+      <section className="relative overflow-hidden bg-primary px-6 py-28 text-primary-foreground sm:py-36">
+        <div className="absolute inset-4 border border-ivory/20 sm:inset-8" aria-hidden />
+        <div className="relative mx-auto max-w-2xl text-center">
+          <Reveal>
+            <p className="eyebrow text-ivory/60">Vamos conversar</p>
+            <h2 className="mt-7 font-display text-3xl leading-tight text-ivory sm:text-5xl">
+              Sua data ainda está livre
+            </h2>
+            <p className="mx-auto mt-8 max-w-md font-serif text-xl italic text-ivory/80">
+              Conte-nos sobre o seu evento. Respondemos pessoalmente, sem formulários longos.
+            </p>
+          </Reveal>
+          <Reveal delay={180}>
+            <div className="mt-12 flex flex-col items-center justify-center gap-5 sm:flex-row">
+              <a
+                href={WHATSAPP}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full border border-accent bg-accent px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ink uppercase transition-colors duration-500 hover:bg-transparent hover:text-accent sm:w-auto"
+              >
+                WhatsApp
+              </a>
+              <a
+                href={INSTAGRAM}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full border border-ivory/40 px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ivory uppercase transition-colors duration-500 hover:border-ivory sm:w-auto"
+              >
+                Instagram
+              </a>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <footer className="px-6 py-14 text-center">
+        <p className="font-display text-lg">
+          duo<span className="text-accent">.</span>laproducoes
+        </p>
+        <p className="mt-4 text-[0.68rem] tracking-[0.24em] text-muted-foreground uppercase">
+          Fotografia &amp; Filmagem — Brasil
+        </p>
+      </footer>
+
+      {/* WhatsApp fixo */}
+      <a
+        href={WHATSAPP}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Falar no WhatsApp"
+        className="fixed right-5 bottom-5 z-50 flex items-center gap-3 border border-accent/60 bg-background/90 px-5 py-3 text-[0.68rem] tracking-[0.24em] uppercase shadow-none backdrop-blur transition-colors duration-500 hover:bg-accent hover:text-ink"
+      >
+        <span className="size-1.5 rotate-45 bg-accent" aria-hidden />
+        WhatsApp
+      </a>
+    </main>
   );
 }
