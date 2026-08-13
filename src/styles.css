@@ -152,7 +152,7 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/__l5e/assets-v1/ed81a5ae-5d71-41b3-8921-8abe8341d202/floral-sage.png");
+  background-image: url("./assets/floral-sage.png");
   background-repeat: repeat;
   background-size: 400px auto;
   opacity: 0.08;
