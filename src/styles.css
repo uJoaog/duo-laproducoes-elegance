@@ -147,14 +147,17 @@
 }
 
 
-/* Sutil papel floral de fundo */
+/* Sutil papel floral de fundo — cobre toda a extensão vertical da página */
 body::before {
   content: "";
-  position: fixed;
+  position: absolute;
   inset: 0;
-  background-color: color-mix(in oklab, var(--background) 84%, transparent);
+  background-image: url("/__l5e/assets-v1/ed81a5ae-5d71-41b3-8921-8abe8341d202/floral-sage.png");
+  background-repeat: repeat;
+  background-size: 400px auto;
+  opacity: 0.08;
   pointer-events: none;
-  z-index: 0;
+  z-index: -2;
 }
 
 body > * {
