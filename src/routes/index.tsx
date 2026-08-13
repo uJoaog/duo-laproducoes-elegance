@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
+import { SiteHeader } from "@/components/SiteHeader";
 import hero from "@/assets/hero.jpg";
 import about from "@/assets/about.jpg";
 import g1 from "@/assets/g1.jpg";
@@ -86,7 +87,8 @@ function Ornament() {
 
 function Index() {
   return (
-    <main className="text-foreground">
+    <main id="top" className="text-foreground">
+      <SiteHeader />
       {/* HERO */}
       <section className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6">
         <img
@@ -195,7 +197,7 @@ function Index() {
       </section>
 
       {/* SERVIÇOS */}
-      <section className="bg-ivory/25 px-6 py-24 sm:py-36">
+      <section id="servicos" className="bg-secondary/50 px-6 py-24 sm:py-36">
         <div className="mx-auto max-w-4xl">
           <Reveal className="text-center">
             <p className="eyebrow">O que registramos</p>
@@ -222,7 +224,7 @@ function Index() {
       </section>
 
       {/* PORTFÓLIO */}
-      <section className="px-6 py-24 sm:py-36">
+      <section id="portfolio" className="px-6 py-24 sm:py-36">
         <Reveal className="mx-auto max-w-4xl text-center">
           <p className="eyebrow">Seleção</p>
           <h2 className="mt-6 font-display text-3xl sm:text-[2.6rem]">Portfólio</h2>
@@ -267,7 +269,7 @@ function Index() {
       </section>
 
       {/* DEPOIMENTOS */}
-      <section className="bg-ivory/25 px-6 py-24 sm:py-32">
+      <section id="depoimentos" className="bg-secondary/50 px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
           <Reveal className="text-center">
             <Ornament />
@@ -291,7 +293,7 @@ function Index() {
       </section>
 
       {/* CONTATO */}
-      <section className="relative overflow-hidden bg-ivory/40 px-6 py-28 text-ink sm:py-36">
+      <section id="contato" className="relative overflow-hidden bg-secondary/60 px-6 py-28 text-ink sm:py-36">
         <div className="absolute inset-4 border border-ink/10 sm:inset-8" aria-hidden />
         <div className="relative mx-auto max-w-2xl text-center">
           <Reveal>
