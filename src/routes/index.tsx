@@ -195,7 +195,7 @@ function Index() {
       </section>
 
       {/* SERVIÇOS */}
-      <section className="bg-secondary/70 backdrop-blur-[2px] px-6 py-24 sm:py-36">
+      <section className="bg-ivory/60 px-6 py-24 sm:py-36">
         <div className="mx-auto max-w-4xl">
           <Reveal className="text-center">
             <p className="eyebrow">O que registramos</p>
@@ -267,7 +267,7 @@ function Index() {
       </section>
 
       {/* DEPOIMENTOS */}
-      <section className="bg-secondary/70 backdrop-blur-[2px] px-6 py-24 sm:py-32">
+      <section className="bg-ivory/60 px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
           <Reveal className="text-center">
             <Ornament />
@@ -291,15 +291,15 @@ function Index() {
       </section>
 
       {/* CONTATO */}
-      <section className="relative overflow-hidden bg-primary px-6 py-28 text-primary-foreground sm:py-36">
-        <div className="absolute inset-4 border border-ivory/20 sm:inset-8" aria-hidden />
+      <section className="relative overflow-hidden bg-ivory/80 px-6 py-28 text-ink sm:py-36">
+        <div className="absolute inset-4 border border-ink/10 sm:inset-8" aria-hidden />
         <div className="relative mx-auto max-w-2xl text-center">
           <Reveal>
-            <p className="eyebrow text-ivory/60">Vamos conversar</p>
-            <h2 className="mt-7 font-display text-3xl leading-tight text-ivory sm:text-5xl">
+            <p className="eyebrow text-muted-foreground">Vamos conversar</p>
+            <h2 className="mt-7 font-display text-3xl leading-tight text-ink sm:text-5xl">
               Sua data ainda está livre
             </h2>
-            <p className="mx-auto mt-8 max-w-md font-serif text-xl italic text-ivory/80">
+            <p className="mx-auto mt-8 max-w-md font-serif text-xl italic text-muted-foreground">
               Conte-nos sobre o seu evento. Respondemos pessoalmente, sem formulários longos.
             </p>
           </Reveal>
@@ -317,7 +317,7 @@ function Index() {
                 href={INSTAGRAM}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full border border-ivory/40 px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ivory uppercase transition-colors duration-500 hover:border-ivory sm:w-auto"
+                className="w-full border border-ink/30 px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ink uppercase transition-colors duration-500 hover:border-ink hover:bg-ink/5 sm:w-auto"
               >
                 Instagram
               </a>
