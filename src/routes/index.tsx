@@ -1,13 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { SiteHeader } from "@/components/SiteHeader";
+import { PortfolioMosaic } from "@/components/PortfolioMosaic";
 import hero from "@/assets/hero.jpg";
 import about from "@/assets/about.jpg";
-import g1 from "@/assets/g1.jpg";
-import g2 from "@/assets/g2.jpg";
-import g3 from "@/assets/g3.jpg";
-import g4 from "@/assets/g4.jpg";
-import g5 from "@/assets/g5.jpg";
 
 const WHATSAPP = "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento";
 const INSTAGRAM = "https://instagram.com/duo.laproducoes";
@@ -224,8 +220,8 @@ function Index() {
       </section>
 
       {/* PORTFÓLIO */}
-      <section id="portfolio" className="bg-[#eae9e5] px-6 py-24 sm:py-36">
-        <Reveal className="mx-auto max-w-4xl text-center">
+      <section id="portfolio" className="overflow-hidden bg-[#eae9e5] py-24 sm:py-36">
+        <Reveal className="mx-auto max-w-4xl px-6 text-center">
           <p className="eyebrow">Seleção</p>
           <h2 className="mt-6 font-display text-3xl sm:text-[2.6rem]">Portfólio</h2>
           <p className="mx-auto mt-6 max-w-md font-serif text-lg italic text-muted-foreground">
@@ -233,39 +229,11 @@ function Index() {
           </p>
         </Reveal>
 
-        <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-10 lg:gap-14">
-          {[
-            { src: g1, alt: "Mesa posta com velas e flores secas", w: 900, h: 1200, tall: true },
-            { src: g2, alt: "Convidados celebrando em festa elegante", w: 1200, h: 900 },
-            { src: g3, alt: "Mãos da noiva segurando buquê delicado", w: 900, h: 1200, tall: true },
-            { src: g4, alt: "Evento corporativo noturno em salão iluminado", w: 1200, h: 900 },
-            { src: g5, alt: "Bolo de aniversário com velas acesas", w: 900, h: 1200, tall: true },
-          ].map((img, i) => (
-            <Reveal
-              key={img.alt}
-              delay={(i % 2) * 120}
-              className={i === 4 ? "sm:col-span-2 sm:mx-auto sm:w-2/3" : ""}
-            >
-              <figure className="group overflow-hidden">
-                <div className="overflow-hidden">
-                  <img
-                    src={img.src}
-                    alt={img.alt}
-                    width={img.w}
-                    height={img.h}
-                    loading="lazy"
-                    className={`w-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.04] ${
-                      img.tall ? "aspect-[3/4]" : "aspect-[4/3]"
-                    }`}
-                  />
-                </div>
-                <figcaption className="mt-4 text-[0.68rem] tracking-[0.24em] text-muted-foreground uppercase opacity-0 transition-opacity duration-700 group-hover:opacity-100">
-                  {img.alt}
-                </figcaption>
-              </figure>
-            </Reveal>
-          ))}
+        <div className="mt-14">
+          <PortfolioMosaic />
         </div>
+
+        <p className="eyebrow mt-8 hidden text-center sm:block">Arraste para o lado</p>
       </section>
 
       {/* DEPOIMENTOS */}
