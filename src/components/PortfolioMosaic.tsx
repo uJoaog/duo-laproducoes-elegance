@@ -113,7 +113,7 @@ export function PortfolioMosaic() {
       ref={ref}
       className="no-scrollbar w-full cursor-grab overflow-x-auto overscroll-x-contain active:cursor-grabbing"
     >
-      <div className="flex w-max gap-2 px-6">
+      <div className="flex w-max gap-1.5 px-6">
         {set("a")}
         {set("b")}
       </div>
