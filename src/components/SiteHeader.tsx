@@ -27,7 +27,7 @@ export function SiteHeader() {
 
           <nav className="hidden items-center gap-10 md:flex">
             {links.map(([label, href]) => (
-              
+              <a
                 key={href}
                 href={href}
                 className="text-[0.68rem] font-light tracking-[0.28em] uppercase text-ink transition-colors duration-500 hover:text-accent"
