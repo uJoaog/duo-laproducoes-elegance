@@ -127,6 +127,14 @@
   );
 }
 
+@utility no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 @utility link-underline {
   position: relative;
   &::after {
