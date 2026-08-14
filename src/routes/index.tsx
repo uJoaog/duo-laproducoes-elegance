@@ -119,11 +119,11 @@ function Index() {
             </p>
           </Reveal>
           <Reveal delay={560}>
-            <a
+            
               href={WHATSAPP}
               target="_blank"
               rel="noreferrer"
-              className="mt-12 inline-block border border-ivory/45 px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ivory uppercase transition-colors duration-500 hover:border-accent hover:bg-accent/90 hover:text-ink"
+              className="mt-12 inline-block rounded-full border border-ivory/45 px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ivory uppercase transition-colors duration-500 hover:border-accent hover:bg-accent/90 hover:text-ink"
             >
               Consultar data
             </a>
@@ -197,7 +197,7 @@ function Index() {
       </section>
 
       {/* SERVIÇOS */}
-      <section id="servicos" className="bg-secondary/50 px-6 py-24 sm:py-36">
+      <section id="servicos" className="bg-[#e7e4df] px-6 py-24 sm:py-36">
         <div className="mx-auto max-w-4xl">
           <Reveal className="text-center">
             <p className="eyebrow">O que registramos</p>
@@ -224,7 +224,7 @@ function Index() {
       </section>
 
       {/* PORTFÓLIO */}
-      <section id="portfolio" className="px-6 py-24 sm:py-36">
+      <section id="portfolio" className="bg-[#eae9e5] px-6 py-24 sm:py-36">
         <Reveal className="mx-auto max-w-4xl text-center">
           <p className="eyebrow">Seleção</p>
           <h2 className="mt-6 font-display text-3xl sm:text-[2.6rem]">Portfólio</h2>
@@ -269,7 +269,7 @@ function Index() {
       </section>
 
       {/* DEPOIMENTOS */}
-      <section id="depoimentos" className="bg-secondary/50 px-6 py-24 sm:py-32">
+      <section id="depoimentos" className="bg-[#e1e4de] px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
           <Reveal className="text-center">
             <Ornament />
@@ -279,7 +279,7 @@ function Index() {
               <Reveal key={d.a} delay={i * 120}>
                 <blockquote className="text-center md:text-left">
                   <p className="font-serif text-xl leading-relaxed italic text-foreground/85">
-                    “{d.q}”
+                    "{d.q}"
                   </p>
                   <footer className="mt-6">
                     <p className="text-[0.72rem] tracking-[0.22em] uppercase">{d.a}</p>
@@ -293,7 +293,7 @@ function Index() {
       </section>
 
       {/* CONTATO */}
-      <section id="contato" className="relative overflow-hidden bg-secondary/60 px-6 py-28 text-ink sm:py-36">
+      <section id="contato" className="relative overflow-hidden bg-[#ede9e1] px-6 py-28 text-ink sm:py-36">
         <div className="absolute inset-4 border border-ink/10 sm:inset-8" aria-hidden />
         <div className="relative mx-auto max-w-2xl text-center">
           <Reveal>
@@ -307,19 +307,19 @@ function Index() {
           </Reveal>
           <Reveal delay={180}>
             <div className="mt-12 flex flex-col items-center justify-center gap-5 sm:flex-row">
-              <a
+              
                 href={WHATSAPP}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full border border-accent bg-accent px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ink uppercase transition-colors duration-500 hover:bg-transparent hover:text-accent sm:w-auto"
+                className="w-full rounded-full border border-[#8FAE83] bg-[#8FAE83] px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ink uppercase transition-colors duration-500 hover:bg-transparent hover:text-[#6b8a60] sm:w-auto"
               >
                 WhatsApp
               </a>
-              <a
+              
                 href={INSTAGRAM}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full border border-ink/30 px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ink uppercase transition-colors duration-500 hover:border-ink hover:bg-ink/5 sm:w-auto"
+                className="w-full rounded-full border border-ink/30 px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ink uppercase transition-colors duration-500 hover:border-ink hover:bg-ink/5 sm:w-auto"
               >
                 Instagram
               </a>
@@ -338,14 +338,14 @@ function Index() {
       </footer>
 
       {/* WhatsApp fixo */}
-      <a
+      
         href={WHATSAPP}
         target="_blank"
         rel="noreferrer"
         aria-label="Falar no WhatsApp"
-        className="fixed right-5 bottom-5 z-50 flex items-center gap-3 border border-accent/60 bg-background/90 px-5 py-3 text-[0.68rem] tracking-[0.24em] uppercase shadow-none backdrop-blur transition-colors duration-500 hover:bg-accent hover:text-ink"
+        className="fixed right-5 bottom-5 z-50 flex items-center gap-3 rounded-full border border-[#8FAE83] bg-[#8FAE83] px-5 py-3 text-[0.68rem] tracking-[0.24em] text-ink uppercase shadow-none backdrop-blur transition-colors duration-500 hover:bg-[#7ea073]"
       >
-        <span className="size-1.5 rotate-45 bg-accent" aria-hidden />
+        <span className="size-1.5 rotate-45 bg-ink" aria-hidden />
         WhatsApp
       </a>
     </main>
