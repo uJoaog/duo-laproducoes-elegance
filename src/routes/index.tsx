@@ -4,11 +4,6 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { PortfolioMosaic } from "@/components/PortfolioMosaic";
 import hero from "@/assets/hero.jpg";
 import about from "@/assets/about.jpg";
-import g1 from "@/assets/g1.jpg";
-import g2 from "@/assets/g2.jpg";
-import g3 from "@/assets/g3.jpg";
-import g4 from "@/assets/g4.jpg";
-import g5 from "@/assets/g5.jpg";
 
 const WHATSAPP = "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento";
 const INSTAGRAM = "https://instagram.com/duo.laproducoes";
