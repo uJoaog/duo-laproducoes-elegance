@@ -93,7 +93,7 @@ export function PortfolioMosaic() {
 
   const set = (key: string) =>
     columns.map((col, ci) => (
-      <div key={`${key}-${ci}`} className="flex w-[58vw] shrink-0 flex-col gap-2 sm:w-[22rem]">
+      <div key={`${key}-${ci}`} className="flex w-[58vw] shrink-0 flex-col gap-1.5 sm:w-[22rem]">
         {col.map((s, i) => (
           <figure key={`${key}-${ci}-${i}`} className="overflow-hidden">
             <img
