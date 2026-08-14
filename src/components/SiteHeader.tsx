@@ -27,7 +27,7 @@ export function SiteHeader() {
 
           <nav className="hidden items-center gap-10 md:flex">
             {links.map(([label, href]) => (
-              
+              <a
                 key={href}
                 href={href}
                 className="text-[0.68rem] font-light tracking-[0.28em] uppercase text-ink transition-colors duration-500 hover:text-accent"
@@ -71,7 +71,7 @@ export function SiteHeader() {
         </div>
         <nav className="mt-20 flex flex-col items-center gap-12">
           {links.map(([label, href]) => (
-            
+            <a
               key={href}
               href={href}
               onClick={() => setOpen(false)}
