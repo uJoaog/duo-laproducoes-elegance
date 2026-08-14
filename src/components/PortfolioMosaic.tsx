@@ -9,22 +9,22 @@ type Shot = { src: string; alt: string; ratio: string };
 
 const columns: Shot[][] = [
   [
-    { src: g1, alt: "Mesa posta com velas e flores secas", ratio: "aspect-[3/4]" },
-    { src: g4, alt: "Evento corporativo noturno em salão iluminado", ratio: "aspect-square" },
-    { src: g2, alt: "Convidados celebrando em festa elegante", ratio: "aspect-[4/3]" },
+    { src: g1, alt: "Mesa posta com velas e flores secas", ratio: "aspect-[3/2]" },
+    { src: g4, alt: "Evento corporativo noturno em salão iluminado", ratio: "aspect-[2/1]" },
+    { src: g2, alt: "Convidados celebrando em festa elegante", ratio: "aspect-[8/3]" },
   ],
   [
-    { src: g3, alt: "Mãos da noiva segurando buquê delicado", ratio: "aspect-square" },
-    { src: g5, alt: "Bolo de aniversário com velas acesas", ratio: "aspect-[3/4]" },
+    { src: g3, alt: "Mãos da noiva segurando buquê delicado", ratio: "aspect-[2/1]" },
+    { src: g5, alt: "Bolo de aniversário com velas acesas", ratio: "aspect-[3/2]" },
   ],
   [
-    { src: g2, alt: "Brinde entre convidados ao entardecer", ratio: "aspect-[4/3]" },
-    { src: g1, alt: "Detalhes da decoração em tons neutros", ratio: "aspect-square" },
-    { src: g3, alt: "Retrato espontâneo durante a cerimônia", ratio: "aspect-[3/4]" },
+    { src: g2, alt: "Brinde entre convidados ao entardecer", ratio: "aspect-[8/3]" },
+    { src: g1, alt: "Detalhes da decoração em tons neutros", ratio: "aspect-[2/1]" },
+    { src: g3, alt: "Retrato espontâneo durante a cerimônia", ratio: "aspect-[3/2]" },
   ],
   [
-    { src: g5, alt: "Velas acesas em celebração noturna", ratio: "aspect-square" },
-    { src: g4, alt: "Salão preparado para confraternização", ratio: "aspect-[3/4]" },
+    { src: g5, alt: "Velas acesas em celebração noturna", ratio: "aspect-[2/1]" },
+    { src: g4, alt: "Salão preparado para confraternização", ratio: "aspect-[3/2]" },
   ],
 ];
 
@@ -93,7 +93,7 @@ export function PortfolioMosaic() {
 
   const set = (key: string) =>
     columns.map((col, ci) => (
-      <div key={`${key}-${ci}`} className="flex w-[58vw] shrink-0 flex-col gap-2 sm:w-[22rem]">
+      <div key={`${key}-${ci}`} className="flex w-[58vw] shrink-0 flex-col gap-1.5 sm:w-[22rem]">
         {col.map((s, i) => (
           <figure key={`${key}-${ci}-${i}`} className="overflow-hidden">
             <img
@@ -113,7 +113,7 @@ export function PortfolioMosaic() {
       ref={ref}
       className="no-scrollbar w-full cursor-grab overflow-x-auto overscroll-x-contain active:cursor-grabbing"
     >
-      <div className="flex w-max gap-2 px-6">
+      <div className="flex w-max gap-1.5 px-6">
         {set("a")}
         {set("b")}
       </div>
