@@ -119,7 +119,7 @@ function Index() {
             </p>
           </Reveal>
           <Reveal delay={560}>
-            
+            <a
               href={WHATSAPP}
               target="_blank"
               rel="noreferrer"
@@ -307,7 +307,7 @@ function Index() {
           </Reveal>
           <Reveal delay={180}>
             <div className="mt-12 flex flex-col items-center justify-center gap-5 sm:flex-row">
-              
+              <a
                 href={WHATSAPP}
                 target="_blank"
                 rel="noreferrer"
@@ -315,7 +315,7 @@ function Index() {
               >
                 WhatsApp
               </a>
-              
+              <a
                 href={INSTAGRAM}
                 target="_blank"
                 rel="noreferrer"
@@ -338,7 +338,7 @@ function Index() {
       </footer>
 
       {/* WhatsApp fixo */}
-      
+      <a
         href={WHATSAPP}
         target="_blank"
         rel="noreferrer"
