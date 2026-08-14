@@ -9,22 +9,22 @@ type Shot = { src: string; alt: string; ratio: string };
 
 const columns: Shot[][] = [
   [
-    { src: g1, alt: "Mesa posta com velas e flores secas", ratio: "aspect-[3/4]" },
-    { src: g4, alt: "Evento corporativo noturno em salão iluminado", ratio: "aspect-square" },
-    { src: g2, alt: "Convidados celebrando em festa elegante", ratio: "aspect-[4/3]" },
+    { src: g1, alt: "Mesa posta com velas e flores secas", ratio: "aspect-[3/2]" },
+    { src: g4, alt: "Evento corporativo noturno em salão iluminado", ratio: "aspect-[2/1]" },
+    { src: g2, alt: "Convidados celebrando em festa elegante", ratio: "aspect-[8/3]" },
   ],
   [
-    { src: g3, alt: "Mãos da noiva segurando buquê delicado", ratio: "aspect-square" },
-    { src: g5, alt: "Bolo de aniversário com velas acesas", ratio: "aspect-[3/4]" },
+    { src: g3, alt: "Mãos da noiva segurando buquê delicado", ratio: "aspect-[2/1]" },
+    { src: g5, alt: "Bolo de aniversário com velas acesas", ratio: "aspect-[3/2]" },
   ],
   [
-    { src: g2, alt: "Brinde entre convidados ao entardecer", ratio: "aspect-[4/3]" },
-    { src: g1, alt: "Detalhes da decoração em tons neutros", ratio: "aspect-square" },
-    { src: g3, alt: "Retrato espontâneo durante a cerimônia", ratio: "aspect-[3/4]" },
+    { src: g2, alt: "Brinde entre convidados ao entardecer", ratio: "aspect-[8/3]" },
+    { src: g1, alt: "Detalhes da decoração em tons neutros", ratio: "aspect-[2/1]" },
+    { src: g3, alt: "Retrato espontâneo durante a cerimônia", ratio: "aspect-[3/2]" },
   ],
   [
-    { src: g5, alt: "Velas acesas em celebração noturna", ratio: "aspect-square" },
-    { src: g4, alt: "Salão preparado para confraternização", ratio: "aspect-[3/4]" },
+    { src: g5, alt: "Velas acesas em celebração noturna", ratio: "aspect-[2/1]" },
+    { src: g4, alt: "Salão preparado para confraternização", ratio: "aspect-[3/2]" },
   ],
 ];
 
