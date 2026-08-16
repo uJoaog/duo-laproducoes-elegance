@@ -179,7 +179,7 @@ export function ServicesSection() {
 
       {/* DESKTOP — seção fixa controlada por scroll */}
       <div ref={wrapperRef} className="relative hidden h-[600vh] md:block">
-        <div className="sticky top-0 flex h-screen flex-col items-center justify-center overflow-hidden">
+        <div className="sticky top-0 flex h-screen flex-col items-center justify-center overflow-hidden pt-24">
           <div className="shrink-0">
             <Header />
           </div>
