@@ -197,7 +197,7 @@ function Index() {
       </section>
 
       {/* DEPOIMENTOS */}
-      <section id="depoimentos" className="bg-[#e1e4de] px-6 py-24 sm:py-32">
+      <section id="depoimentos" className="bg-[#dce3d7] px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
           <Reveal className="text-center">
             <Ornament />
