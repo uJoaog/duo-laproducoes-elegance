@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { PortfolioMosaic } from "@/components/PortfolioMosaic";
+import { ServicesSection } from "@/components/ServicesSection";
+
 import hero from "@/assets/hero.jpg";
 import about from "@/assets/about.jpg";
 
