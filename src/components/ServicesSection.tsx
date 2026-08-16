@@ -164,7 +164,7 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="servicos" className="bg-[#e7e4df]">
+    <section id="servicos" className="bg-[#e4dfd3]">
       {/* MOBILE — fallback simples com fade-in */}
       <div className="px-6 py-24 md:hidden">
         <Reveal>
