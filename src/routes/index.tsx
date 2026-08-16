@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Reveal } from "@/components/Reveal";
 import { SiteHeader } from "@/components/SiteHeader";
 import { PortfolioMosaic } from "@/components/PortfolioMosaic";
+import { ServicesSection } from "@/components/ServicesSection";
+
 import hero from "@/assets/hero.jpg";
 import about from "@/assets/about.jpg";
 
@@ -30,28 +32,8 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const servicos = [
-  {
-    n: "01",
-    t: "Casamentos",
-    d: "Do making of à última música. Cobertura completa em foto e vídeo, com discrição e um olhar atento aos detalhes que ninguém vê.",
-  },
-  {
-    n: "02",
-    t: "Aniversários",
-    d: "Celebrações íntimas ou grandes festas. Registros espontâneos que guardam o clima da noite, não apenas as poses.",
-  },
-  {
-    n: "03",
-    t: "Corporativo",
-    d: "Congressos, lançamentos e confraternizações. Imagens elegantes e prontas para comunicação da sua marca.",
-  },
-  {
-    n: "04",
-    t: "Ensaios & Pré-Wedding",
-    d: "Sessões conduzidas com calma, em locação escolhida a dois, para criar intimidade antes do grande dia.",
-  },
-];
+
+
 
 const depoimentos = [
   {
@@ -148,7 +130,7 @@ function Index() {
               />
             </div>
           </Reveal>
-          <div>
+          <div className="text-center md:text-left">
             <Reveal>
               <p className="eyebrow">Sobre nós</p>
               <h2 className="mt-6 font-display text-3xl leading-tight sm:text-[2.6rem]">
@@ -158,7 +140,7 @@ function Index() {
               </h2>
             </Reveal>
             <Reveal delay={140}>
-              <p className="mt-8 max-w-prose text-[0.98rem] leading-[1.9] text-muted-foreground">
+              <p className="mx-auto mt-8 max-w-prose text-[0.98rem] leading-[1.9] text-muted-foreground md:mx-0">
                 A duo.laproducoes nasceu do encontro de uma fotógrafa e um cinegrafista que
                 acreditam na mesma coisa: os melhores registros acontecem quando ninguém percebe a
                 câmera. Trabalhamos sempre em dupla — enquanto um observa o gesto, o outro guarda o
@@ -166,14 +148,15 @@ function Index() {
               </p>
             </Reveal>
             <Reveal delay={240}>
-              <p className="mt-6 max-w-prose text-[0.98rem] leading-[1.9] text-muted-foreground">
+              <p className="mx-auto mt-6 max-w-prose text-[0.98rem] leading-[1.9] text-muted-foreground md:mx-0">
                 Cobertura completa de foto e vídeo, do planejamento à entrega, com tratamento
                 autoral, luz natural sempre que possível e nenhuma pressa. O resultado é um acervo
                 que envelhece bem — para ser revisto daqui a vinte anos.
               </p>
             </Reveal>
             <Reveal delay={320}>
-              <div className="mt-12 flex flex-wrap gap-x-14 gap-y-8">
+              <div className="mt-12 flex flex-wrap justify-center gap-x-14 gap-y-8 md:justify-start">
+
                 {[
                   ["+180", "eventos registrados"],
                   ["2", "profissionais em cada evento"],
@@ -193,31 +176,8 @@ function Index() {
       </section>
 
       {/* SERVIÇOS */}
-      <section id="servicos" className="bg-[#e7e4df] px-6 py-24 sm:py-36">
-        <div className="mx-auto max-w-4xl">
-          <Reveal className="text-center">
-            <p className="eyebrow">O que registramos</p>
-            <h2 className="mt-6 font-display text-3xl sm:text-[2.6rem]">Serviços</h2>
-            <div className="mt-8">
-              <Ornament />
-            </div>
-          </Reveal>
+      <ServicesSection />
 
-          <div className="mt-16 border-t border-border">
-            {servicos.map((s, i) => (
-              <Reveal key={s.t} delay={i * 90}>
-                <article className="group grid grid-cols-[auto_1fr] gap-x-6 gap-y-3 border-b border-border py-10 transition-colors duration-500 hover:bg-background/60 sm:grid-cols-[5rem_1fr_1.4fr] sm:gap-x-10">
-                  <span className="font-serif text-sm text-accent">{s.n}</span>
-                  <h3 className="font-display text-2xl leading-tight sm:text-[1.7rem]">{s.t}</h3>
-                  <p className="col-span-2 max-w-prose text-[0.95rem] leading-[1.85] text-muted-foreground sm:col-span-1">
-                    {s.d}
-                  </p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* PORTFÓLIO */}
       <section id="portfolio" className="overflow-hidden bg-[#eae9e5] py-24 sm:py-36">
