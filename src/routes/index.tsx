@@ -180,7 +180,7 @@ function Index() {
 
 
       {/* PORTFÓLIO */}
-      <section id="portfolio" className="overflow-hidden bg-[#f0efec] py-24 sm:py-36">
+      <section id="portfolio" className="overflow-hidden bg-[#e8e5dd] py-24 sm:py-36">
         <Reveal className="mx-auto max-w-4xl px-6 text-center">
           <p className="eyebrow">Seleção</p>
           <h2 className="mt-6 font-display text-3xl sm:text-[2.6rem]">Portfólio</h2>
@@ -197,7 +197,7 @@ function Index() {
       </section>
 
       {/* DEPOIMENTOS */}
-      <section id="depoimentos" className="bg-[#dce3d7] px-6 py-24 sm:py-32">
+      <section id="depoimentos" className="bg-[#cdd9c3] px-6 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl">
           <Reveal className="text-center">
             <Ornament />
@@ -221,7 +221,7 @@ function Index() {
       </section>
 
       {/* CONTATO */}
-      <section id="contato" className="relative overflow-hidden bg-[#f0e6cf] px-6 py-28 text-ink sm:py-36">
+      <section id="contato" className="relative overflow-hidden bg-[#ecd9a8] px-6 py-28 text-ink sm:py-36">
         <div className="absolute inset-4 border border-ink/10 sm:inset-8" aria-hidden />
         <div className="relative mx-auto max-w-2xl text-center">
           <Reveal>
