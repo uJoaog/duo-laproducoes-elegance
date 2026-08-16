@@ -221,7 +221,7 @@ function Index() {
       </section>
 
       {/* CONTATO */}
-      <section id="contato" className="relative overflow-hidden bg-[#ede9e1] px-6 py-28 text-ink sm:py-36">
+      <section id="contato" className="relative overflow-hidden bg-[#f0e6cf] px-6 py-28 text-ink sm:py-36">
         <div className="absolute inset-4 border border-ink/10 sm:inset-8" aria-hidden />
         <div className="relative mx-auto max-w-2xl text-center">
           <Reveal>
