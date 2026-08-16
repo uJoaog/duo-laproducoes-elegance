@@ -180,7 +180,7 @@ function Index() {
 
 
       {/* PORTFÓLIO */}
-      <section id="portfolio" className="overflow-hidden bg-[#eae9e5] py-24 sm:py-36">
+      <section id="portfolio" className="overflow-hidden bg-[#f0efec] py-24 sm:py-36">
         <Reveal className="mx-auto max-w-4xl px-6 text-center">
           <p className="eyebrow">Seleção</p>
           <h2 className="mt-6 font-display text-3xl sm:text-[2.6rem]">Portfólio</h2>
