@@ -130,7 +130,7 @@ function Index() {
               />
             </div>
           </Reveal>
-          <div>
+          <div className="text-center md:text-left">
             <Reveal>
               <p className="eyebrow">Sobre nós</p>
               <h2 className="mt-6 font-display text-3xl leading-tight sm:text-[2.6rem]">
@@ -140,7 +140,7 @@ function Index() {
               </h2>
             </Reveal>
             <Reveal delay={140}>
-              <p className="mt-8 max-w-prose text-[0.98rem] leading-[1.9] text-muted-foreground">
+              <p className="mx-auto mt-8 max-w-prose text-[0.98rem] leading-[1.9] text-muted-foreground md:mx-0">
                 A duo.laproducoes nasceu do encontro de uma fotógrafa e um cinegrafista que
                 acreditam na mesma coisa: os melhores registros acontecem quando ninguém percebe a
                 câmera. Trabalhamos sempre em dupla — enquanto um observa o gesto, o outro guarda o
@@ -148,14 +148,15 @@ function Index() {
               </p>
             </Reveal>
             <Reveal delay={240}>
-              <p className="mt-6 max-w-prose text-[0.98rem] leading-[1.9] text-muted-foreground">
+              <p className="mx-auto mt-6 max-w-prose text-[0.98rem] leading-[1.9] text-muted-foreground md:mx-0">
                 Cobertura completa de foto e vídeo, do planejamento à entrega, com tratamento
                 autoral, luz natural sempre que possível e nenhuma pressa. O resultado é um acervo
                 que envelhece bem — para ser revisto daqui a vinte anos.
               </p>
             </Reveal>
             <Reveal delay={320}>
-              <div className="mt-12 flex flex-wrap gap-x-14 gap-y-8">
+              <div className="mt-12 flex flex-wrap justify-center gap-x-14 gap-y-8 md:justify-start">
+
                 {[
                   ["+180", "eventos registrados"],
                   ["2", "profissionais em cada evento"],
