@@ -193,31 +193,8 @@ function Index() {
       </section>
 
       {/* SERVIÇOS */}
-      <section id="servicos" className="bg-[#e7e4df] px-6 py-24 sm:py-36">
-        <div className="mx-auto max-w-4xl">
-          <Reveal className="text-center">
-            <p className="eyebrow">O que registramos</p>
-            <h2 className="mt-6 font-display text-3xl sm:text-[2.6rem]">Serviços</h2>
-            <div className="mt-8">
-              <Ornament />
-            </div>
-          </Reveal>
+      <ServicesSection />
 
-          <div className="mt-16 border-t border-border">
-            {servicos.map((s, i) => (
-              <Reveal key={s.t} delay={i * 90}>
-                <article className="group grid grid-cols-[auto_1fr] gap-x-6 gap-y-3 border-b border-border py-10 transition-colors duration-500 hover:bg-background/60 sm:grid-cols-[5rem_1fr_1.4fr] sm:gap-x-10">
-                  <span className="font-serif text-sm text-accent">{s.n}</span>
-                  <h3 className="font-display text-2xl leading-tight sm:text-[1.7rem]">{s.t}</h3>
-                  <p className="col-span-2 max-w-prose text-[0.95rem] leading-[1.85] text-muted-foreground sm:col-span-1">
-                    {s.d}
-                  </p>
-                </article>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* PORTFÓLIO */}
       <section id="portfolio" className="overflow-hidden bg-[#eae9e5] py-24 sm:py-36">
