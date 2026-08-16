@@ -32,28 +32,8 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const servicos = [
-  {
-    n: "01",
-    t: "Casamentos",
-    d: "Do making of à última música. Cobertura completa em foto e vídeo, com discrição e um olhar atento aos detalhes que ninguém vê.",
-  },
-  {
-    n: "02",
-    t: "Aniversários",
-    d: "Celebrações íntimas ou grandes festas. Registros espontâneos que guardam o clima da noite, não apenas as poses.",
-  },
-  {
-    n: "03",
-    t: "Corporativo",
-    d: "Congressos, lançamentos e confraternizações. Imagens elegantes e prontas para comunicação da sua marca.",
-  },
-  {
-    n: "04",
-    t: "Ensaios & Pré-Wedding",
-    d: "Sessões conduzidas com calma, em locação escolhida a dois, para criar intimidade antes do grande dia.",
-  },
-];
+
+
 
 const depoimentos = [
   {
