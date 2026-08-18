@@ -70,10 +70,10 @@ function Index() {
       {/* HERO */}
       <section className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6">
         <img
-          src={hero}
-          alt="Casal de noivos ao pôr do sol sob arcos de pedra"
+          src={hero.url}
+          alt="Casal de noivos se beijando entre convidados em jardim"
           width={1920}
-          height={1280}
+          height={1080}
           className="absolute inset-0 size-full object-cover"
         />
         <div className="absolute inset-0 bg-ink/45" />
