@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { PortfolioMosaic } from "@/components/PortfolioMosaic";
 import { ServicesSection } from "@/components/ServicesSection";
 
-import hero from "@/assets/hero.jpg";
+import hero from "@/assets/hero-banner.jpg.asset.json";
 import about from "@/assets/about.jpg";
 
 const WHATSAPP = "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento";
@@ -70,10 +70,10 @@ function Index() {
       {/* HERO */}
       <section className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-6">
         <img
-          src={hero}
-          alt="Casal de noivos ao pôr do sol sob arcos de pedra"
+          src={hero.url}
+          alt="Casal de noivos se beijando entre convidados em jardim"
           width={1920}
-          height={1280}
+          height={1080}
           className="absolute inset-0 size-full object-cover"
         />
         <div className="absolute inset-0 bg-ink/45" />
