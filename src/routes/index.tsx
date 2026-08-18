@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { PortfolioMosaic } from "@/components/PortfolioMosaic";
 import { ServicesSection } from "@/components/ServicesSection";
 
-import hero from "@/assets/hero.jpg";
+import hero from "@/assets/hero-banner.jpg.asset.json";
 import about from "@/assets/about.jpg";
 
 const WHATSAPP = "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20um%20or%C3%A7amento";
