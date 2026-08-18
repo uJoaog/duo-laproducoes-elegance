@@ -222,14 +222,14 @@ function Index() {
 
       {/* CONTATO */}
       <section id="contato" className="relative overflow-hidden bg-[#5d5a50] px-6 py-28 text-ivory sm:py-36">
-        <div className="absolute inset-4 border border-ink/10 sm:inset-8" aria-hidden />
+        <div className="absolute inset-4 border border-ivory/15 sm:inset-8" aria-hidden />
         <div className="relative mx-auto max-w-2xl text-center">
           <Reveal>
-            <p className="eyebrow text-muted-foreground">Vamos conversar</p>
-            <h2 className="mt-7 font-display text-3xl leading-tight text-ink sm:text-5xl">
+            <p className="eyebrow text-ivory/70">Vamos conversar</p>
+            <h2 className="mt-7 font-display text-3xl leading-tight text-ivory sm:text-5xl">
               Sua data ainda está livre
             </h2>
-            <p className="mx-auto mt-8 max-w-md font-serif text-xl italic text-muted-foreground">
+            <p className="mx-auto mt-8 max-w-md font-serif text-xl italic text-ivory/80">
               Conte-nos sobre o seu evento. Respondemos pessoalmente, sem formulários longos.
             </p>
           </Reveal>
@@ -239,7 +239,7 @@ function Index() {
                 href={WHATSAPP}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full rounded-full border border-[#8FAE83] bg-[#8FAE83] px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ink uppercase transition-colors duration-500 hover:bg-transparent hover:text-[#6b8a60] sm:w-auto"
+                className="w-full rounded-full border border-[#8FAE83] bg-[#8FAE83] px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ink uppercase transition-colors duration-500 hover:bg-transparent hover:text-[#8FAE83] sm:w-auto"
               >
                 WhatsApp
               </a>
@@ -247,7 +247,7 @@ function Index() {
                 href={INSTAGRAM}
                 target="_blank"
                 rel="noreferrer"
-                className="w-full rounded-full border border-ink/30 px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ink uppercase transition-colors duration-500 hover:border-ink hover:bg-ink/5 sm:w-auto"
+                className="w-full rounded-full border border-ivory/40 px-9 py-4 text-[0.7rem] tracking-[0.3em] text-ivory uppercase transition-colors duration-500 hover:border-ivory hover:bg-ivory/10 sm:w-auto"
               >
                 Instagram
               </a>
